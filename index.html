@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إسلام محمد أحمد عبد العزيز</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; background: #f4f4f4; margin: 0; padding: 0; }
+    .container { margin-top: 50px; padding: 20px; }
+    h1 { font-size: 3em; color: #333; margin-bottom: 10px; }
+    img { width: 200px; height: 200px; border-radius: 50%; border: 5px solid #ddd; margin-top: 20px; }
+    p { font-size: 1.5em; color: #555; margin-top: 20px; }
+    button { font-size: 1.5em; padding: 10px 20px; border: none; background-color: #008CBA; color: white; border-radius: 10px; cursor: pointer; margin-top: 20px; }
+    button:hover { background-color: #005F73; }
+    .count { font-size: 2em; color: #333; margin-top: 20px; }
+    .designer { position: absolute; top: 10px; left: 10px; font-size: 1em; color: darkred; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="designer">Creator: Ahmed Talat Kerbal</div>
+  <div class="container">
+    <h1>إسلام محمد أحمد عبد العزيز</h1>
+    <img src="https://i.ibb.co/p2gP6cd/IMG-2714.jpg" alt="صورة إسلام">
+    <p>اللهم اغفر له وارحمه وعافه واعف عنه، واجعل هذه الصفحة صدقة جارية على روحه.</p>
+    <button onclick="playSoundAndIncreaseCount()">اضغط للاستغفار</button>
+    <div class="count" id="count">0</div>
+  </div>
+
+  <!-- Sound file -->
+  <audio id="istighfarSound" src="https://www.soundjay.com/button/beep-07.mp3"></audio>
+
+  <script>
+    let count = 0;
+
+    function playSoundAndIncreaseCount() {
+      // Play the sound
+      const sound = document.getElementById('istighfarSound');
+      sound.play();
+
+      // Increase the count
+      count++;
+      document.getElementById('count').innerText = count;
+    }
+  </script>
+</body>
+</html>
